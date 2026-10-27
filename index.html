@@ -206,7 +206,7 @@ footer a:focus-visible{outline:2px solid var(--champagne);outline-offset:3px}
 
     <div class="intro">
       <h1>دوره رایگان مدیریت صنعت غذا</h1>
-      <p>مدیریت، قیمت‌گذاری و رشد کسب‌وکار غذایی را قدم‌به‌قدم یاد بگیر. نام و شماره‌ات را ثبت کن تا مستقیم وارد کانال تلگرام دوره شوی.</p>
+      <p>مدیریت،سیستم سازی، قیمت‌گذاری و رشد کسب‌وکار غذایی رو قدم‌به‌قدم یاد بگیر. نام و شماره‌ات را ثبت کن تا مستقیم وارد کانال تلگرام دوره شی.</p>
       <span class="badge">کاملاً رایگان</span>
     </div>
 
@@ -237,12 +237,12 @@ footer a:focus-visible{outline:2px solid var(--champagne);outline-offset:3px}
         <input class="trap" type="checkbox" name="botcheck" id="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
 
         <button class="btn" id="submit" type="submit">ثبت و ورود به کانال تلگرام</button>
-        <p class="fine">بعد از ثبت، به‌صورت خودکار به تلگرام منتقل می‌شوی.</p>
+        <p class="fine">بعد از ثبت، به‌صورت خودکار به تلگرام منتقل میشی.</p>
       </form>
 
       <div class="done" id="done" role="status">
-        <h2>ثبت‌نامت انجام شد</h2>
-        <p>در حال انتقال به کانال تلگرام هستی. اگر منتقل نشدی، دکمه زیر را بزن.</p>
+        <h2>ثبت‌نام انجام شد</h2>
+        <p>در حال انتقال به کانال تلگرام هستی.(فیلتر شکن روشن باشد) اگر منتقل نشدی، دکمه زیر را بزن.</p>
         <a class="btn" id="tg" href="#" rel="noopener">ورود به کانال تلگرام</a>
       </div>
     </section>
@@ -318,7 +318,7 @@ function validate(){
 
   const e1 = fname.length < 2 ? "نام را وارد کن." : "";
   const e2 = lname.length < 2 ? "نام خانوادگی را وارد کن." : "";
-  const e3 = /^(\+98|0098|98|0)?9\d{9}$/.test(phone) ? "" : "شماره موبایل را درست وارد کن؛ مثلاً 09123456789";
+  const e3 = /^(\+98|0098|98|0)?9\d{9}$/.test(phone) ? "" : "شماره موبایل را صحیح وارد کن؛ مثلاً 09123456789";
   setErr("fname", e1); setErr("lname", e2); setErr("phone", e3);
   if (e1) first = $("fname"); else if (e2) first = $("lname"); else if (e3) first = $("phone");
   if (first){ first.focus(); return null; }
